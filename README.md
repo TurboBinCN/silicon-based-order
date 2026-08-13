@@ -1,6 +1,6 @@
 # Silicon‑Based Order / 硅基序纲领
 
-[中文 (原文)](./zh/%E7%A1%92%E5%9F%BA%E5%BA%8F%E7%BA%B2.md) · [English (translation)](./en/Silicon-Based-Order-Manifesto.md) · [Bilingual one‑page summary](./docs/bilingual-summary.md)
+[中文 (原文)](./zh/硅基序纲领.md.md) · [English (translation)](./en/Silicon-Based-Order-Manifesto.md) · [Bilingual one‑page summary](./docs/bilingual-summary.md)
 
 TL;DR
 
