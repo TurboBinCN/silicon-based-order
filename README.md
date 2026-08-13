@@ -29,24 +29,19 @@ TL;DR
 提示示例（新手可直接复制粘贴发给 AI）
 
 ```
-你现在是一位资深的AI技术布道师兼企业内训专家。我接下来会发给你一份关于“LLM系统工程方法论”的原始文档。请你帮我完成以下两项任务：
+You are a senior AI evangelist and corporate trainer. I will paste a raw document about an "LLM systems engineering methodology." Please help me with two tasks:
 
-**任务一：为原始文档编写一份“新手引导与使用说明”（必须放在文档最开头）**
-因为原始文档里的概念比较硬核，为了让团队成员（尤其是新手）能立刻看懂并上手，请在文档开头增加一段引导语，并直接提供以下三个“示例提问”，告诉���家可以直接复制这些问题发给AI：
+Task 1: Write a "Beginner Guide & Usage Instructions" and place it at the very top of the source document. The original is dense and conclusion-first; make an approachable intro and include these three example questions people can copy and send to an AI:
+  1. Explain this LLM systems engineering methodology in plain language.
+  2. Extract the four pillars and provide a practical step-by-step workflow to implement them.
+  3. Convert the methodology into a concise developer checklist the team can adopt.
 
-1. 用大白话完整讲解这套 LLM 系统工程方法论；
-2. 提炼四大支柱的落地流程；
-3. 简化成团队可直接使用的开发规范。
+Task 2: Translate the "Four Pillars" into plain language. For each pillar, provide: (a) a plain-language explanation avoiding academic jargon; (b) a short real-world metaphor or business scenario (e.g., "Topology & Boundary -> Give the AI a work badge that defines its permissions"); (c) one practical starter action the team can implement in 1–2 hours.
 
-**任务二：对文档中的“四大支柱”进行“人话翻译”**
-原始文档中的四大支柱（拓扑边界、认知分级、强类型接口、防循环依赖）概念太抽象了，像机器码一样难以理解。请你务必在文档中为这四大支柱增加一个“大白话翻译”模块。
-要求：
-
-- 摒弃生涩的学术词汇，用最接地气的语言解释它们的根本性原理。
-- 必须结合生活比喻或真实的业务场景（比如：把“拓扑边界”翻译成“给AI发工牌定规矩”等），让团队成员看一眼就能get到核心点。
-
-如果你准备好了，请回复“收到”，我接下来会把原始文档发给你。
+If you are ready, reply with "ACK" and I will paste the document.
 ```
+
+---
 
 Why this README was updated (style reference: Karpathy gist)
 
@@ -89,6 +84,75 @@ License & Author
 - Author: TurboBinCN
 
 ---
+
+If you'd like, I can:  
+- publish a GH‑Pages site for nicer language toggling and readable layout;  
+- generate a full side‑by‑side bilingual file (large);  
+- add badges or a small CSS for readability.
+
+---
+
+ENGLISH (stacked translation)
+
+README — Quick guide (English)
+
+This repository contains the Silicon‑Based Order manifesto: an LLM systems‑engineering idea file that presents a conclusion‑first, high‑density methodology. The original Chinese source is in `zh/硅基序纲领.md` and an English reader‑oriented translation is available in `en/Silicon-Based-Order-Manifesto.md`.
+
+Quick note — how to read this repo
+
+- The manifesto is written as a paradigm idea‑file: it's intended to be fed to an LLM Agent (Codex / Claude / OpenCode / Pi …) to instantiate concrete implementations. It is not tied to any specific toolkit.
+- v1.3 highlights (2026‑08‑09): information governance dimension; two‑channel layering (G: governance, M: management); closed‑loop rule ↔ execution; carbon→silicon mapping; a two‑question scope filter; four‑pillar refinements; core principle: human must retain governance authority.
+
+Important reading note
+
+1. The text is structured conclusion‑first and is dense; reading it directly can be hard for humans. We recommend giving the full document to an LLM and asking it to summarize/translate/extract actionable items.
+2. Best practice: paste the whole document into an LLM and ask for a beginner‑friendly guide, a plain‑language translation of the four pillars, and a short developer checklist.
+
+Example prompt (copy & paste)
+
+```
+You are a senior AI evangelist and corporate trainer. I will paste a raw document about an "LLM systems engineering methodology." Please help me with two tasks:
+
+Task 1: Write a "Beginner Guide & Usage Instructions" and place it at the very top of the source document. The original is dense and conclusion-first; make an approachable intro and include these three example questions people can copy and send to an AI:
+  1. Explain this LLM systems engineering methodology in plain language.
+  2. Extract the four pillars and provide a practical step-by-step workflow to implement them.
+  3. Convert the methodology into a concise developer checklist the team can adopt.
+
+Task 2: Translate the "Four Pillars" into plain language. For each pillar, provide: (a) a plain-language explanation avoiding academic jargon; (b) a short real-world metaphor or business scenario (e.g., "Topology & Boundary -> Give the AI a work badge that defines its permissions"); (c) one practical starter action the team can implement in 1–2 hours.
+
+If you are ready, reply with "ACK" and I will paste the document.
+```
+
+Why this README was updated
+
+- Make onboarding faster for multi‑lingual teams
+- Provide a direct “feed-to‑AI” route for high‑density idea files
+- Keep README short while linking to full translated sources
+
+Quick checklist (English)
+
+1. Identify high‑risk flows (multi‑step / cross‑role / high‑impact).  
+2. Define P1 (Topology & Boundary): state machine, inputs/outputs, forbidden actions, ownership.  
+3. Classify tasks under P2 (Cognitive Tiering): Tier1 (templates) / Tier2 (reasoning) / Tier3 (creative).  
+4. Configure P3 (Resource & Circuit Breaker): token budgets, chunking, anchor echo frequency, emergency stop thresholds.  
+5. Enable P4 (Closure & Bootstrapping): assign a critic (Dialectician), auditing cadence, blind‑sampling checks, feedback to P1/P2.
+
+Files of interest (English)
+
+- `zh/硅基序纲领.md` — original Chinese idea‑file (primary).  
+- `en/Silicon-Based-Order-Manifesto.md` — English translation (reader‑oriented).  
+- `docs/bilingual-summary.md` — one‑page, side‑by‑side bilingual summary for quick reading.  
+- `docs/APPLY.md` — practical step‑by‑step checklist for engineers.  
+
+Contribute / Feedback (English)
+
+- Prefer edits: open a PR. For translation changes, label `translation`.  
+- Want a full bilingual side‑by‑side of the entire paper (very large)? Tell me and I will add it as `docs/bilingual-full.md` (warning: very long).
+
+License & Author (English)
+
+- MIT — see `LICENSE`.  
+- Author: TurboBinCN
 
 If you'd like, I can:  
 - publish a GH‑Pages site for nicer language toggling and readable layout;  
