@@ -1,0 +1,24 @@
+# AGENTS.md
+
+## 仓库性质
+
+纯文档仓库（LLM 系统工程方法论宣言 "硅基序纲领"），无代码、无构建、无测试、无 CI、无包管理配置。**不存在任何可运行的命令**，不要在仓库里找 npm/pytest/lint 等工具链。
+
+## 文件结构与事实来源
+
+- `zh/硅基序纲领.md` — **唯一事实来源（中文原稿）**，内容更新一律先改它。
+- `en/Silicon-Based-Order-Manifesto.md` — 英文翻译。用户明确偏好**字面直译风格**（见 git log "literal style per request"），不是意译。修改翻译时保持一致。
+- `README.md` — 中英堆叠双语结构（先中文后英文）：开头的标题/简介行只出现一次，之后分 "## 中文" 与 "## English" 两节，两节内容结构一致，**必须同步改，不能只改一半**。README 内置了核心框架速览（五假设 / 四支柱 / 主梁）、Scope Gate、阅读引导与示例提示词，是仓库唯一入口。
+- `LICENSE` — MIT。
+
+## 维护约定
+
+- 任何实质性内容修改（新假设、新支柱、治理规则）都要：改中文原稿 → 同步英文翻译 → 同步 README 的"核心框架速览 / 版本更新"两部分（README 无独立 docs 目录，摘要即 README 内置）。
+- README 的 "版本更新 / Changelog" 是正文变更的更新日志，正文有实质更新时必须同步更新（含版本号与日期）。
+- 翻译类 PR 加 `translation` label（见 README Contribute 一节）。
+- 新增文档后，更新 README 的 "文件导航 / Files" 表格。
+
+## 风格红线
+
+- 正文是**结论前置、高密度、写给 LLM Agent 读的 idea-file**：不要"简化"正文的叙事或删减论证密度，不要添加教程式说明——引导读者把全文喂给 AI 的说明已写在 README。
+- 术语需保持中英一致（如 P1 拓扑边界 / Topology & Boundary、辩证官 / critic、四支柱 / four pillars），改动术语时要全局同步。
